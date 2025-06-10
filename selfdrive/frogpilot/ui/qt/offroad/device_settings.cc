@@ -104,7 +104,7 @@ FrogPilotDevicePanel::FrogPilotDevicePanel(FrogPilotSettingsWindow *parent) : Fr
       recorderToggle->setVisibleButton(1, false);
       deviceToggle = recorderToggle;
     } else if (param == "ScreenTimeout" || param == "ScreenTimeoutOnroad") {
-      deviceToggle = new FrogPilotParamValueControl(param, title, desc, icon, 5, 60, tr(" seconds"));
+      deviceToggle = new FrogPilotParamValueControl(param, title, desc, icon, 5, 3600, tr(" seconds"));
 
     } else {
       deviceToggle = new ParamControl(param, title, desc, icon);
